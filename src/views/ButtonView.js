@@ -5,7 +5,7 @@ class ButtonView extends React.Component {
     render() {
         return(
             <div>
-
+                ButtonView
             </div>
         )
     }

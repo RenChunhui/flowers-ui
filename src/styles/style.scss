@@ -1,5 +1,9 @@
 // 样式
 
-@import './mixins';
+
 @import './reboot';
 @import './variables';
+
+@import './mixins/shadow';
+
+@import './components/appbar';

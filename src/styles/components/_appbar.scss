@@ -1,0 +1,14 @@
+// App Bar
+
+.appbar {
+    display: flex;
+    position: absolute;
+    padding: $gutter;
+    top: 0;
+    right: 0;
+    left: 0;
+    height:$appbar-mobile-height;
+    line-height: $appbar-mobile-height;
+    color: white;
+    background-color: $theme-primary;
+}

@@ -4,7 +4,7 @@
   "description": "react material ui",
   "main": "index.js",
   "scripts": {
-    "eslint":"eslint src/",
+    "eslint": "eslint src/",
     "build": "webpack --progress --colors --watch",
     "dev": "webpack-dev-server --open --inline --hot"
   },
@@ -21,7 +21,8 @@
   "dependencies": {
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
-    "react-router": "^4.1.1"
+    "react-router": "^4.1.1",
+    "react-router-dom": "^4.1.1"
   },
   "devDependencies": {
     "babel-core": "^6.24.0",
