@@ -1,0 +1,21 @@
+// Flat Button
+
+button {
+    background: transparent;
+    border: 0;
+    min-width: 5.5rem;
+    height: 2.25rem;
+    @include typo-button();
+
+    &.button-light { color: #000 }
+    &.button-info { color: $theme-info }
+    &.button-danger { color: $theme-danger }
+    &.button-primary { color: $theme-primary }
+    &.button-warning { color: $theme-warning }
+    &.button-success { color: $theme-success }
+    &.button-dark { color: #FFF }
+}
+
+// Raised Button
+
+// Action Button

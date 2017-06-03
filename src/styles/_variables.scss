@@ -6,6 +6,10 @@
 $theme-primary: #3F51B5 !default;
 $theme-primary-dark: #303F9F !default;
 $theme-accent: #FF4081 !default;
+$theme-info: #4FADF9 !default;
+$theme-danger: #EC3D40 !default;
+$theme-warning: #FBAD3D !default;
+$theme-success: #00C05E !default;
 
 
 
@@ -50,3 +54,7 @@ $columns: (
 
 $appbar-mobile-height:48px !default;
 $appbar-desktop-height:64px !default;
+
+// 按钮
+$btn-height: 36px;
+$btn-border-radius: 2px;

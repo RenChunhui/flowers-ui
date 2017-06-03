@@ -16,7 +16,7 @@ import {
 } from 'react-router-dom'
 
 import ButtonView from './views/ButtonView';
-import AppBar from './components/AppBar';
+
 
 class App extends React.Component {
     
@@ -24,9 +24,9 @@ class App extends React.Component {
         return(
             <Router>
                 <div>
-                    <AppBar />
+                    
                     <ul>
-                        <li><Link to="/button">Topics</Link></li>
+                        <li><Link to="/button">Button</Link></li>
                     </ul>   
                     <Route path="/button" component={ ButtonView }/>
                 </div>
