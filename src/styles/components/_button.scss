@@ -1,21 +1,50 @@
 // Flat Button
 
 button {
+    margin: .5rem;
+    padding: 0 1rem;
     background: transparent;
     border: 0;
     min-width: 5.5rem;
     height: 2.25rem;
     @include typo-button();
 
-    &.button-light { color: #000 }
-    &.button-info { color: $theme-info }
-    &.button-danger { color: $theme-danger }
-    &.button-primary { color: $theme-primary }
-    &.button-warning { color: $theme-warning }
-    &.button-success { color: $theme-success }
-    &.button-dark { color: #FFF }
+    &.btn-raised {
+        border-radius: 0.125rem;
+    }
+
+    &.btn-light {
+        color: #000;
+        background-color: #FFF;
+    }
+
+    &.btn-info {
+        color: #FFF;
+        background-color: $theme-info;
+    }
+
+    &.btn-danger {
+        color: #FFF;
+        background-color: $theme-danger;
+    }
+
+    &.btn-primary {
+        color: #FFF;
+        background-color: $theme-primary;
+    }
+
+    &.btn-warning {
+        color: #FFF;
+        background-color: $theme-warning;
+    }
+
+    &.btn-success {
+        color: #FFF;
+        background-color: $theme-success;
+    }
+
+    &.btn-dark {
+        color: #FFF;
+        background-color: #000;
+    }
 }
-
-// Raised Button
-
-// Action Button

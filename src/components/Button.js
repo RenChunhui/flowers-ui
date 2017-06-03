@@ -12,10 +12,12 @@ import React from 'react';
 
 class Button extends React.Component {
     render() {
+        const className = this.props.type === 'flat' ? `color-${this.props.style}` : `btn-raised btn-${this.props.style}`;
+
         return(
-           <button className={`button-${this.props.style}`}>
+           <button className={className}>
                {this.props.label}
-           </button> 
+           </button>
         )
     }
 }
@@ -28,17 +30,17 @@ Button.propTypes = {
     /**
      * 按钮类型
      */
-    type: React.PropTypes.oneOf(['action','flat','raised']),
+    type: React.PropTypes.oneOf(['flat','raised']),
     /**
      * 样式
      */
     style: React.PropTypes.oneOf(['light','info','danger','primary','success','dark','warning'])
-}
+};
 
 Button.defaultProps = {
     label:'Button',
     type: 'flat',
     style: 'light'
-}
+};
 
 export default Button;
