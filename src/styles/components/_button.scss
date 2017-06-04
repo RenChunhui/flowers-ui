@@ -11,6 +11,7 @@ button {
 
     &.btn-raised {
         border-radius: 0.125rem;
+        @include shadow-2dp();
     }
 
     &.btn-light {
