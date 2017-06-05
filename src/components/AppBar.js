@@ -9,15 +9,35 @@
  */
 
 import React from 'react';
+import PropTypes from 'prop-types';
+
 
 class AppBar extends React.Component {
     render() {
         return(
             <div className="appbar">
-                AppBar
+                <div className="nav-icon">
+                    <span className="material-icons">menu</span>
+                </div>
+                <a className="title">{this.props.title}</a>
             </div>
         )
     }
 } 
+
+AppBar.propTypes = {
+    /**
+     * Nav icon
+     */
+    navIcon: PropTypes.bool,
+    title: PropTypes.string,
+    filterIcon: PropTypes.bool,
+}
+
+AppBar.defaultProps = {
+    navIcon: false,
+    title: 'Application',
+    filterIcon: false
+}
 
 export default AppBar;

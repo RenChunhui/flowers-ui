@@ -9,6 +9,7 @@
  */
 
 import React from 'react';
+import PropTypes from 'prop-types';
 
 class Button extends React.Component {
     render() {
@@ -26,15 +27,15 @@ Button.propTypes = {
     /**
      * 按钮文字
      */
-    label: React.PropTypes.string.isRequired,
+    label: PropTypes.string.isRequired,
     /**
      * 按钮类型
      */
-    type: React.PropTypes.oneOf(['flat','raised']),
+    type: PropTypes.oneOf(['flat','raised']),
     /**
      * 样式
      */
-    style: React.PropTypes.oneOf(['light','info','danger','primary','success','dark','warning'])
+    style: PropTypes.oneOf(['light','info','danger','primary','success','dark','warning'])
 };
 
 Button.defaultProps = {

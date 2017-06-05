@@ -2,13 +2,44 @@
 
 .appbar {
     display: flex;
-    position: absolute;
-    padding: 16px;
-    top: 0;
-    right: 0;
-    left: 0;
-    height:$appbar-mobile-height;
-    line-height: $appbar-mobile-height;
+    align-items: center;
+    width: 100%;
+    height: $appbar-tablet-height;
+    line-height: $appbar-tablet-height;
+
+    @include breakpoint-rotate() {
+        height: $appbar-landscape-height;
+        line-height: $appbar-landscape-height;
+    }
+
+    @include breakpoint-handset() {
+        height: $appbar-portrait-height;
+        line-height: $appbar-portrait-height;
+    }
     color: white;
     background-color: $theme-primary;
+    @include shadow-4dp();
+}
+
+.appbar .nav-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 3rem;
+    height: 3rem;
+    padding-left: map-get($gutter,'desktop') - 12px;
+
+    @include breakpoint-handset() {
+        padding-left: map-get($gutter,'mobile') - 12px;
+    }
+}
+
+.nav-icon span {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.appbar .title {
+    position: absolute;
+    padding-left: 5rem;
 }

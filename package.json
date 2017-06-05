@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/RenChunhui/react-material-ui#readme",
   "dependencies": {
+    "prop-types": "^15.5.10",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
     "react-router": "^4.1.1",

@@ -20,13 +20,16 @@ $theme-success: #00C05E !default;
 // 断点
 //
 // 响应式布局，用于自适应不同的尺寸，用于媒体查询
+// 手机肖像模式 (320px ~ 480px)
+// 手机景观模式 & 平板肖像模式 (480px ~ 960px)
+// 平板景观模式 (960px ~ 1280px)
+// 桌面型电脑 （1280px ~ ? )
 
-$breakpoint: (
-    xs: 0,
-    sm: 600px,
-    md: 960px,
-    lg: 1280px,
-    xl: 1920px
+$breakpoints: (
+  xs: 320px,
+  sm: 480px,
+  md: 960px,
+  lg: 1280px,
 ) !default;
 
 // Gutter
@@ -52,9 +55,6 @@ $columns: (
 
 // 应用栏
 
-$appbar-mobile-height:48px !default;
-$appbar-desktop-height:64px !default;
-
-// 按钮
-$btn-height: 36px;
-$btn-border-radius: 2px;
+$appbar-landscape-height: 3rem !default;
+$appbar-portrait-height: 3.5rem !default;
+$appbar-tablet-height: 4rem !default;

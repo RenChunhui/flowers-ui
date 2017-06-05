@@ -15,7 +15,9 @@ import {
   Link
 } from 'react-router-dom'
 
+import AppBar from './components/AppBar';
 import ButtonView from './views/ButtonView';
+import NavigationView from './views/NavigationView';
 
 
 class App extends React.Component {
@@ -24,11 +26,13 @@ class App extends React.Component {
         return(
             <Router>
                 <div>
-                    
+                    <AppBar title="Component"/>
                     <ul>
                         <li><Link to="/button">Button</Link></li>
+                        <li><Link to="/nav">Navigation</Link></li>
                     </ul>   
                     <Route path="/button" component={ ButtonView }/>
+                    <Route path="/nav" component={ NavigationView }/>
                 </div>
             </Router>
         )
