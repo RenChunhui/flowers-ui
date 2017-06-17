@@ -13,10 +13,32 @@ import PropTypes from 'prop-types';
 
 
 class AppBar extends React.Component {
+    constructor() {
+        super();
+
+        this.state = {
+            show: false
+        }
+
+        this.handleClick = this.handleClick.bind(this);
+    }
+
+    // 
+    // EVENT HANDLER
+    // ----------------------------------------------------------------------
+
+    handleClick() {
+        // TO DO
+        this.setState({
+            show: !this.state.show
+        })
+        
+    }
+
     render() {
         return(
             <div className="appbar">
-                <div className="nav-icon">
+                <div className="nav-icon" onClick={this.handleClick}>
                     <span className="material-icons">menu</span>
                 </div>
                 <a className="title">{this.props.title}</a>

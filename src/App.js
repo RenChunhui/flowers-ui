@@ -13,9 +13,10 @@ import {
   BrowserRouter as Router,
   Route,
   Link
-} from 'react-router-dom'
+} from 'react-router-dom';
 
 import AppBar from './components/AppBar';
+import SideNav from './components/SideNav'; 
 import ButtonView from './views/ButtonView';
 import NavigationView from './views/NavigationView';
 
@@ -27,6 +28,9 @@ class App extends React.Component {
             <Router>
                 <div>
                     <AppBar title="Component"/>
+                    <SideNav>
+                       
+                    </SideNav>
                     <ul>
                         <li><Link to="/button">Button</Link></li>
                         <li><Link to="/nav">Navigation</Link></li>
