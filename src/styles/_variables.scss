@@ -1,6 +1,6 @@
 $font-name: 'Roboto', 'Helvetica', 'Arial', sans-serif !default;
 
-// 
+//
 // 样式
 // ----------------------------------------------------------------------
 
@@ -12,9 +12,19 @@ $theme-danger: #EC3D40 !default;
 $theme-warning: #FBAD3D !default;
 $theme-success: #00C05E !default;
 
+$default-theme: (
+  primary: #3F51B5,
+  primary-dark: #303F9F,
+  accent: #FF4081,
+  info: #4FADF9,
+  danger: #EC3D40,
+  warning: #FBAD3D,
+  success: #00C05E
+) !default;
 
 
-// 
+
+//
 // 布局
 // ----------------------------------------------------------------------
 
@@ -50,7 +60,7 @@ $columns: (
 
 
 
-// 
+//
 // 组件
 // ----------------------------------------------------------------------
 

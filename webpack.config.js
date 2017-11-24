@@ -2,7 +2,6 @@ const path = require('path');
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
-const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
     entry: [
@@ -72,11 +71,6 @@ module.exports = {
         new ExtractTextPlugin("css/styles.css"),
         new HtmlWebpackPlugin({
             template: './public/index.html',
-            //favicon:'./public/favicon.ico'
-        }),
-        /*new CopyWebpackPlugin([{
-            from: __dirname + '/public/img',
-            to: __dirname + '/dist/img'
-        }])*/
+        })
     ]
 }
