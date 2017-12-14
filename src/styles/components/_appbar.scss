@@ -5,6 +5,7 @@
   width: 100%;
   color: white;
   background-color: map-get($default-theme, 'primary');
+  box-sizing: border-box;
 
   @include breakpoint-handset() {
     padding: 0 map-get($gutter, 'mobile');
@@ -30,6 +31,7 @@
 
   .title {
     position: absolute;
+    @include typo-title();
 
     @include breakpoint-handset() {
       left: 4.5rem;

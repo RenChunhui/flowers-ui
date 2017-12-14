@@ -11,10 +11,11 @@ import React from 'react'
 import PropTypes from 'prop-types';
 
 class AppBar extends React.Component {
+
   render() {
     return(
       <div className="appbar">
-        <i class="material-icons">menu</i>
+        <div class="material-icons">menu</div>
         <span className="title">{this.props.title}</span>
       </div>
     )

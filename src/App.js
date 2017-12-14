@@ -7,14 +7,15 @@
  * This program is free software. You can redistribute and/or modify it
  * in accordance with the terms of the accompanying license agreement.
  */
-import React from 'react';
+import React from 'react'
 import {
   BrowserRouter as Router,
   Route,
   Link
-} from 'react-router-dom';
+} from 'react-router-dom'
 
-import AppBar from './components/AppBar';
+import AppBar from './components/AppBar'
+import Dawer from './components/Dawer'
 
 class App extends React.Component {
 
@@ -23,10 +24,11 @@ class App extends React.Component {
       <Router>
         <div>
           <AppBar title='Component'/>
+          {/* <Dawer /> */}
         </div>
       </Router>
     )
   }
 }
 
-export default App;
+export default App
