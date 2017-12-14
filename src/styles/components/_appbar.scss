@@ -1,45 +1,50 @@
-// App Bar
-
 .appbar {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    height: $appbar-tablet-height;
-    line-height: $appbar-tablet-height;
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  color: white;
+  background-color: map-get($default-theme, 'primary');
+
+  @include breakpoint-handset() {
+    padding: 0 map-get($gutter, 'mobile');
+    height: map-get($appbar-height, 'landscape')
+  }
+
+  @include breakpoint-rotate() {
+    padding: 0 map-get($gutter, 'mobile');
+    height: map-get($appbar-height, 'portrait')
+  }
+
+  @include breakpoint-tablet() {
+    padding: 0 map-get($gutter, 'desktop');
+    height: map-get($appbar-height, 'tablet')
+  }
+
+  @include breakpoint-desktop() {
+    padding: 0 map-get($gutter, 'desktop');
+    height: map-get($appbar-height, 'tablet')
+  }
+
+  @include shadow-4dp();
+
+  .title {
+    position: absolute;
+
+    @include breakpoint-handset() {
+      left: 4.5rem;
+    }
 
     @include breakpoint-rotate() {
-        height: $appbar-landscape-height;
-        line-height: $appbar-landscape-height;
+      left: 4.5rem;
     }
 
-    @include breakpoint-handset() {
-        height: $appbar-portrait-height;
-        line-height: $appbar-portrait-height;
+    @include breakpoint-tablet() {
+      left: 5rem;
     }
-    color: white;
-    background-color: $theme-primary;
-    @include shadow-4dp();
-}
 
-.appbar .nav-icon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 3rem;
-    height: 3rem;
-    padding-left: map-get($gutter,'desktop') - 12px;
-
-    @include breakpoint-handset() {
-        padding-left: map-get($gutter,'mobile') - 12px;
+    @include breakpoint-desktop() {
+      left: 5rem;
     }
-}
-
-.nav-icon span {
-    width: 1.5rem;
-    height: 1.5rem;
-}
-
-.appbar .title {
-    position: absolute;
-    margin-left: 5rem;
+  }
 }

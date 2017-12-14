@@ -7,7 +7,9 @@
   "author": "Mars",
   "license": "MIT",
   "scripts": {
-    "start": "webpack-dev-server"
+    "dev": "webpack-dev-server --open --hot --config build/webpack.dev.js",
+    "build": "webpack --progress --hide-modules  --config build/webpack.prod.js",
+    "sassdoc": "sassdoc ./src/styles"
   },
   "dependencies": {
     "react": "^16.1.1",
@@ -25,9 +27,11 @@
     "node-sass": "^4.7.2",
     "react-router-dom": "^4.2.2",
     "sass-loader": "^6.0.6",
+    "sassdoc": "^2.5.0",
     "style-loader": "^0.19.0",
     "url-loader": "^0.6.2",
     "webpack": "^3.8.1",
-    "webpack-dev-server": "^2.9.4"
+    "webpack-dev-server": "^2.9.4",
+    "webpack-merge": "^4.1.1"
   }
 }

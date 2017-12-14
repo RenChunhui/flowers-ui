@@ -1,15 +1,7 @@
-// 重启
-
-.color-light { color: #000 }
-.color-info { color: $theme-info }
-.color-danger { color: $theme-danger }
-.color-primary { color: $theme-primary }
-.color-warning { color: $theme-warning }
-.color-success { color: $theme-success }
-.color-dark { color: #FFF }
-
+html,
 body {
-    margin: 0;
-    padding: 0;
-    font-family: $font-name;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $font-name;
 }

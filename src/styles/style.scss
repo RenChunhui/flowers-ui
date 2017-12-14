@@ -1,25 +1,14 @@
-//
-// 全局
-// ----------------------------------------------------------------------
+@charset "UTF-8";
 
-@import './iconfont/material-icons.css';
+// GLOBAL
+@import './fonts/material-icons.css';
 @import './variables';
 @import './reboot';
 
-
-//
-// 引用宏
-// ----------------------------------------------------------------------
-
-@import './mixins/typography';
+// MIXINS
 @import './mixins/shadow';
 @import './mixins/breakpoint';
+@import './mixins/typography';
 
-//
-// 组件
-// ----------------------------------------------------------------------
-
-@import './components/icon';
+// COMPONENTS
 @import './components/appbar';
-@import './components/button';
-@import './components/dawer';

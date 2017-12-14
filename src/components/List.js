@@ -1,6 +1,6 @@
 /**
- * @description: 入口文件
- * @author: Ren Chunhui
+ * @fileoverview 列表
+ * @author Ren Chunhui
  *
  * Copyright (c) 2017 Ren Chunhui
  *
@@ -8,12 +8,15 @@
  * copies or substantial portions of the Software.
  */
 import React from 'react'
-import ReactDOM from 'react-dom'
 
-import App from './App'
+class List extends React.Component {
+  render() {
+    return(
+      <div>
 
+      </div>
+    )
+  }
+}
 
-
-ReactDOM.render((
-  <App />
-), document.getElementById('app'))
+export default List

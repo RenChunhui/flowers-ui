@@ -7,23 +7,15 @@
  * The above copyright notice and this permission notice shall be included in all
  * copies or substantial portions of the Software.
  */
-
-import React from 'react';
+import React from 'react'
 import PropTypes from 'prop-types';
 
-
 class AppBar extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
   render() {
-    return (
+    return(
       <div className="appbar">
-        <div className="nav-icon" onClick={() => this.props.showDawer()}>
-          <span className="material-icons">menu</span>
-        </div>
-        <a className="title">{this.props.title}</a>
+        <i class="material-icons">menu</i>
+        <span className="title">{this.props.title}</span>
       </div>
     )
   }
@@ -31,17 +23,9 @@ class AppBar extends React.Component {
 
 AppBar.propTypes = {
   /**
-   * Nav icon
+   * 标题
    */
-  navIcon: PropTypes.bool,
-  title: PropTypes.string,
-  filterIcon: PropTypes.bool
+  title: PropTypes.string.isRequired
 }
 
-AppBar.defaultProps = {
-  navIcon: false,
-  title: 'Application',
-  filterIcon: false
-}
-
-export default AppBar;
+export default AppBar

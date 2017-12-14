@@ -1,28 +1,27 @@
-
 // 手机肖像模式
 @mixin breakpoint-handset() {
-    @media (min-width: map-get($breakpoints,'xs')) and (max-width:map-get($breakpoints,'sm')) {
-        @content;
-    }
+  @media (min-width: map-get($breakpoints,'xs')) and (max-width:map-get($breakpoints,'sm')) {
+      @content;
+  }
 }
 
 // 手机景观模式 & 平板肖像模式
 @mixin breakpoint-rotate() {
-    @media (min-width: map-get($breakpoints,'sm')) and (max-width: map-get($breakpoints,'md')) {
-        @content;
-    }
+  @media (min-width: map-get($breakpoints,'sm')) and (max-width: map-get($breakpoints,'md')) {
+      @content;
+  }
 }
 
 // 平板景观模式
 @mixin breakpoint-tablet() {
-    @media (min-width: map-get($breakpoints,'md')) and (max-width: map-get($breakpoints,'lg')) {
-        @content;
-    }
+  @media (min-width: map-get($breakpoints,'md')) and (max-width: map-get($breakpoints,'lg')) {
+      @content;
+  }
 }
 
-// 桌面型电脑  
+// 桌面型电脑
 @mixin breakpoint-desktop() {
-    @media (min-width: map-get($breakpoints,'lg')) {
-        @content;
-    }
+  @media (min-width: map-get($breakpoints,'lg')) {
+      @content;
+  }
 }

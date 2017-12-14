@@ -1,17 +1,7 @@
+
 $font-name: 'Roboto', 'Helvetica', 'Arial', sans-serif !default;
 
-//
-// 样式
-// ----------------------------------------------------------------------
-
-$theme-primary: #3F51B5 !default;
-$theme-primary-dark: #303F9F !default;
-$theme-accent: #FF4081 !default;
-$theme-info: #4FADF9 !default;
-$theme-danger: #EC3D40 !default;
-$theme-warning: #FBAD3D !default;
-$theme-success: #00C05E !default;
-
+// 默认主题颜色
 $default-theme: (
   primary: #3F51B5,
   primary-dark: #303F9F,
@@ -22,12 +12,6 @@ $default-theme: (
   success: #00C05E
 ) !default;
 
-
-
-//
-// 布局
-// ----------------------------------------------------------------------
-
 // 断点
 //
 // 响应式布局，用于自适应不同的尺寸，用于媒体查询
@@ -35,7 +19,6 @@ $default-theme: (
 // 手机景观模式 & 平板肖像模式 (480px ~ 960px)
 // 平板景观模式 (960px ~ 1280px)
 // 桌面型电脑 （1280px ~ ? )
-
 $breakpoints: (
   xs: 320px,
   sm: 480px,
@@ -43,29 +26,21 @@ $breakpoints: (
   lg: 1280px,
 ) !default;
 
+// SHADOWS
+$shadow-key-umbra-opacity: 0.2 !default;
+$shadow-key-penumbra-opacity: 0.14 !default;
+$shadow-ambient-shadow-opacity: 0.12 !default;
+
 // Gutter
-
 $gutter: (
-    mobile: 16px,
-    desktop: 24px
-) !default;
-
-// Columns
-
-$columns: (
-    sm: 4,
-    md: 8,
-    lg: 12
+  mobile: 1rem,
+  desktop: 1.5rem
 ) !default;
 
 
-
-//
-// 组件
-// ----------------------------------------------------------------------
-
-// 应用栏
-
-$appbar-landscape-height: 3rem !default;
-$appbar-portrait-height: 3.5rem !default;
-$appbar-tablet-height: 4rem !default;
+// 标题栏
+$appbar-height:(
+  landscape: 3rem,
+  portrait: 3.5rem,
+  tablet: 4rem
+) !default;
