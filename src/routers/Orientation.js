@@ -7,3 +7,5 @@ class Orientation extends React.Component {
     )
   }
 }
+
+export default Orientation;
