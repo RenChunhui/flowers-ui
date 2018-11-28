@@ -3,8 +3,15 @@ language: node_js
 node_js:
   - stable
 
+sudo: false
+
+before_install:
+  - gem install sass
+
 install:
   - npm install
 
 script:
-  - npm run build
+  - sass -v
+  - sass _sass/bootstrap.scss style.css
+

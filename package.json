@@ -1,27 +1,16 @@
 {
-  "name": "awesome-web",
+  "name": "love-material",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "https://github.com/RenChunhui/awesome-web.git",
-  "author": "renchunhui <346878847@qq.com>",
+  "repository": "https://github.com/RenChunhui/love-material.git",
+  "author": "Chunhui Ren<renchunhui2008@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "webpack-dev-server --mode development --open --devtool source-map --watch",
-    "build": "webpack --mode production"
-  },
-  "dependencies": {
-    "react": "^16.4.1",
-    "react-dom": "^16.4.1",
-    "react-router-dom": "^4.3.1"
+    "css-compile": "sass scss/style.scss dist/assets/css/style.css"
   },
   "devDependencies": {
-    "babel-core": "^6.26.3",
-    "babel-loader": "^7.1.5",
-    "babel-preset-env": "^1.7.0",
-    "babel-preset-react": "^6.24.1",
-    "html-webpack-plugin": "^3.2.0",
-    "webpack": "^4.16.2",
-    "webpack-cli": "^3.1.0",
-    "webpack-dev-server": "^3.1.5"
+    "stylelint": "^9.5.0",
+    "stylelint-order": "^1.0.0",
+    "stylelint-scss": "^3.3.0"
   }
 }

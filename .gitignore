@@ -1,12 +1,10 @@
-/node_modules/
-/dist/
 .DS_Store
+_site
+.sass-cache
+.jekyll-metadata
 
-# WebStorm
 .idea
-
-# VSCode
 .vscode
-
-# Emacs
 .projectile
+
+node_modules

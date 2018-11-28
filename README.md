@@ -1,24 +1,31 @@
-<h3 align="center">webAPI</h3>
+<h3 align="center">LOVE MATERIAL</h3>
+
+<p align="center"><strong>Status</strong></p>
 
 <p align="center">
-React 项目结构及配置推荐
+  <a href="https://github.com/RenChunhui/love-material"><img src="https://travis-ci.org/RenChunhui/love-material.svg" alt="Build Status"></a>
+  <a href="https://github.com/RenChunhui/love-material"><img src="https://img.shields.io/npm/v/love-material.svg" alt="npm version"></a>
+  <a href="https://github.com/RenChunhui/love-material"><img src="https://img.shields.io/github/languages/code-size/renchunhui/love-material.svg" alt="GitHub code size in bytes"></a>
+  <a href="https://github.com/RenChunhui/love-material"><img src="https://img.shields.io/github/repo-size/renchunhui/love-material.svg" alt="GitHub repo size in bytes"></a>
+  <a href="https://github.com/RenChunhui/love-material"><img src="https://img.shields.io/github/downloads/renchunhui/love-material/total.svg" alt="Github All Releases"></a>
+  <a href="https://github.com/RenChunhui/love-material"><img src="https://img.shields.io/github/license/renchunhui/love-material.svg" alt="GitHub"></a>
+  <a href="https://github.com/RenChunhui/love-material"><img src="https://img.shields.io/github/package-json/v/renchunhui/love-material.svg" alt="GitHub package version"></a>
+  <a href="https://github.com/RenChunhui/love-material"><img src="https://img.shields.io/github/last-commit/renchunhui/love-material.svg" alt="GitHub last commit"></a>
+  <a href="https://github.com/RenChunhui/love-material"><img src="https://img.shields.io/github/languages/top/renchunhui/love-material.svg" alt="GitHub top language"></a>
+  <a href="https://github.com/RenChunhui/love-material"><img src="https://img.shields.io/github/languages/count/renchunhui/love-material.svg" alt="GitHub language count"></a>
+  <a href="https://github.com/RenChunhui/love-material"><img src="" alt=""></a>
+  <a href="https://github.com/RenChunhui/love-material"><img src="" alt=""></a>
 </p>
 
-[![Build Status](https://travis-ci.org/RenChunhui/webAPI.svg?branch=master)](https://travis-ci.org/RenChunhui/webAPI)
-[![Packagist](https://img.shields.io/packagist/l/doctrine/orm.svg)]( [![GitHub](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/RenChunhui/awesome-web/blob/master/LICENSE))
-[![npm version](https://img.shields.io/npm/v/awesome-web.svg)](https://github.com/RenChunhui/awesome-web)
+# Table of contents
 
-## 快速开始
+- [Quict start](#quick-start)
+- [Copyright and license](#copyright-and-license)
 
-``` bash
-# 使用 Npm
-$ npm install
-$ npm run start
+## Quick start
+- Clone the repo: `git clone https://github.com/RenChunhui/love-material.git`
+- Install with [npm](https://www.npmjs.com/): npm install love-material
+- Install with [yarn](https://yarnpkg.com/): yarn add love-material
 
-# 使用 Yarn
-$ yarn install
-$ yarn start
-```
-
-## 版权许可证
-[MIT LICENSE](LICENSE)
+## Copyright and license
+[MIT License](LICENSE)
