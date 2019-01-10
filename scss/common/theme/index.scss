@@ -1,0 +1,7 @@
+@import 'variables';
+
+:root {
+  @each $key in $theme-colors {
+    --theme-#{$key}: #{map-get($theme-colors, $key)};
+  }
+}

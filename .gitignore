@@ -1,7 +1,7 @@
 .DS_Store
-_site
-.sass-cache
-.jekyll-metadata
+site/_site
+site/.sass-cache
+site/.jekyll-metadata
 
 .idea
 .vscode

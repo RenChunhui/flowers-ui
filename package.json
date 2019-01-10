@@ -9,6 +9,7 @@
     "css-compile": "sass scss/style.scss dist/assets/css/style.css"
   },
   "devDependencies": {
+    "sassdoc": "^2.5.1",
     "stylelint": "^9.5.0",
     "stylelint-order": "^1.0.0",
     "stylelint-scss": "^3.3.0"

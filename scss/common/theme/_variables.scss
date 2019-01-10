@@ -1,0 +1,20 @@
+$primary: #000 !default;
+$secondary: #000 !default;
+$success: #000 !default;
+$info: #000 !default;
+$warning: #000 !default;
+$danger: #000 !default;
+$light: #FFF !default;
+$dark: #000 !default;
+
+// 主题颜色
+$theme-colors: (
+  primary: $primary,
+  secondary: $secondary,
+  success: $success,
+  info: $info,
+  warning: $warning,
+  danger: $danger,
+  light: $light,
+  dark: $dark
+) !default;
