@@ -1,0 +1,21 @@
+@import 'variables';
+
+:root {
+  @each $color,$value in $theme-colors {
+    --#{$color}: #{$value}
+  }
+}
+
+@each $color,$value in $theme-colors {
+  .bg-#{$color} {
+    background-color: $value;
+  }
+
+  .text-#{$color} {
+    color: $value;
+  }
+}
+
+.bg-transparent {
+  background-color: transparent !important;
+}
