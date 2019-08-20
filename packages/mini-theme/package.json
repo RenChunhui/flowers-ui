@@ -1,8 +1,0 @@
-{
-  "name": "@chunhui/theme",
-  "version": "1.0.0",
-  "description": "The mini components for the web theming system",
-  "repository": "https://github.com/renchunhui/mini-ui",
-  "author": "Ren Chunhui",
-  "license": "MIT"
-}
