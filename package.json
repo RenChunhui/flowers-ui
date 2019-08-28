@@ -1,8 +1,0 @@
-{
-  "name": "chameleon",
-  "version": "1.0.0",
-  "main": "index.js",
-  "repository": "https://github.com/RenChunhui/chameleon.git",
-  "author": "Chunhui Ren <renchunhui2008@gmail.com>",
-  "license": "MIT"
-}
