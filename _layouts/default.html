@@ -1,0 +1,28 @@
+---
+id: 001
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="{{ site.author }}">
+
+    <title>Document</title>
+
+    <link rel="stylesheet" href="{{ "/assets/css/style.css" | prepend: site.baseurl }}">
+    <link rel="stylesheet" href="{{ "/assets/css/icomoon.css" | prepend: site.baseurl }}">
+</head>
+<body>
+  <!-- header -->
+  {% include header.html %}
+
+  <!-- body -->
+  <main role="main">
+    {{ content }}
+  </main>
+
+  <!-- footer -->
+  {% include footer.html %}
+</body>
+</html>

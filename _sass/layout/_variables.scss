@@ -1,0 +1,113 @@
+@import 'functions';
+
+/// 0.125rem (2px) spacing with default mini unit
+///
+/// @type Number
+/// @access public
+/// @group layout
+$spacing-01: mini-units(0.25) !default;
+
+/// 0.25rem (4px) spacing with default mini unit
+///
+/// @type Number
+/// @access public
+/// @group layout
+$spacing-02: mini-units(0.5) !default;
+
+/// 0.5rem (8px) spacing with default mini unit
+///
+/// @type Number
+/// @access public
+/// @group layout
+$spacing-03: mini-units(1) !default;
+
+/// 0.75rem (12px) spacing with default mini unit
+///
+/// @type Number
+/// @access public
+/// @group layout
+$spacing-04: mini-units(1.5) !default;
+
+/// 1rem (16px) spacing with default mini unit
+///
+/// @type Number
+/// @access public
+/// @group layout
+$spacing-05: mini-units(2) !default;
+
+/// 1.5rem (24px) spacing with default mini unit
+///
+/// @type Number
+/// @access public
+/// @group layout
+$spacing-06: mini-units(3) !default;
+
+/// 2rem (32px) spacing with default mini unit
+///
+/// @type Number
+/// @access public
+/// @group layout
+$spacing-07: mini-units(4) !default;
+
+/// 2.5rem (40px) spacing with default mini unit
+///
+/// @type Number
+/// @access public
+/// @group layout
+$spacing-08: mini-units(5) !default;
+
+/// 3rem (48px) spacing with default mini unit
+///
+/// @type Number
+/// @access public
+/// @group layout
+$spacing-09: mini-units(6) !default;
+
+/// 1rem (16px) layout with default mini unit
+///
+/// @type Number
+/// @access public
+/// @group layout
+$layout-01: mini-units(2) !default;
+
+/// 1.5rem (24px) layout with default mini unit
+///
+/// @type Number
+/// @access public
+/// @group layout
+$layout-02: mini-units(3) !default;
+
+/// 2rem (32px) layout with default mini unit
+///
+/// @type Number
+/// @access public
+/// @group layout
+$layout-03: mini-units(4) !default;
+
+/// 3rem (48px) layout with default mini unit
+///
+/// @type Number
+/// @access public
+/// @group layout
+$layout-04: mini-units(6) !default;
+
+/// 4rem (64px) layout with default mini unit
+///
+/// @type Number
+/// @access public
+/// @group layout
+$layout-05: mini-units(8) !default;
+
+/// 4rem (96px) layout with default mini unit
+///
+/// @type Number
+/// @access public
+/// @group layout
+$layout-06: mini-units(12) !default;
+
+/// 10rem (160px) layout with default mini unit
+///
+/// @type Number
+/// @access public
+/// @group layout
+$layout-07: mini-units(20) !default;

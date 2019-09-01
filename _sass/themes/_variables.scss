@@ -1,0 +1,24 @@
+// Copyright Chunhui Ren. 2019
+//
+// This source code is licensed under the Apache-2.0 license found in the
+// LICENSE file in the root directory of this source tree.
+
+$primary: #0062ff;
+$secondary: #3d3d3d;
+$error: #da1e28;
+$success:#24a148;
+$warning:#fdd13a;
+$info: #054ada;
+
+$theme-colors:(
+  primary: $primary,
+  secondary: $secondary,
+  error: $error,
+  success: $success,
+  warning: $warning,
+  info: $info
+) !default;
+
+
+
+
