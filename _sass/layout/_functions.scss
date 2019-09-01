@@ -1,29 +1,9 @@
-/// Default font size
-/// @type Number
+/// 单位转换: px -> rem
+///
+/// @param {Number} $value - 像素单位
+/// @return {Number} rem 单位
 /// @access public
 /// @group layout
-$base-font-size: 16px !default;
-
-/// Default mini unit value
-/// @type Number
-/// @access public
-/// @group layout
-$mini-unit-size: 8px !default;
-
-/// Convert a given px unit to a rem unit
-/// @param {Number} $px - Number with px unit
-/// @return {Number} Number with rem unit
-/// @access public
-/// @group layout
-@function convert-rem($px) {
-  @return ($px / $base-font-size) * 1rem;
-}
-
-/// Get the value of the corresponding number of units
-/// @param {Number} $count - The number of units to get the value for
-/// @return {Number} In rem units
-/// @access public
-/// @group layout
-@function mini-units($count) {
-  @return convert-rem($mini-unit-size * $cound);
+@function convert-rem($value) {
+  @return ($value / $font-size-base) * 1rem;
 }

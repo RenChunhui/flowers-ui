@@ -1,24 +1,60 @@
-// Copyright Chunhui Ren. 2019
-//
-// This source code is licensed under the Apache-2.0 license found in the
-// LICENSE file in the root directory of this source tree.
+/// 主色
+///
+/// @type Color
+/// @access public
+/// @group themes
+$theme-primary: $color-blue-06 !default;
 
-$primary: #0062ff;
-$secondary: #3d3d3d;
-$error: #da1e28;
-$success:#24a148;
-$warning:#fdd13a;
-$info: #054ada;
+/// 辅助
+///
+/// @type Color
+/// @access public
+/// @group themes
+$theme-secondary: $color-gray-08 !default;
+
+/// 成功
+///
+/// @type Color
+/// @access public
+/// @group themes
+$theme-success: $color-green-05 !default;
+
+
+/// 错误
+///
+/// @type Color
+/// @access public
+/// @group themes
+$theme-danger: $color-red-06 !default;
+
+
+/// 警告
+///
+/// @type Color
+/// @access public
+/// @group themes
+$theme-warning: $color-yellow-02 !default;
+
+/// 浅色
+///
+/// @type Color
+/// @access public
+/// @group themes
+$theme-light: $color-white !default;
+
+/// 暗色
+///
+/// @type Color
+/// @access public
+/// @group themes
+$theme-dark: $color-black !default;
 
 $theme-colors:(
-  primary: $primary,
-  secondary: $secondary,
-  error: $error,
-  success: $success,
-  warning: $warning,
-  info: $info
+  primary: $theme-primary,
+  secondary: $theme-secondary,
+  success: $theme-success,
+  danger: $theme-danger,
+  warning: $theme-danger,
+  light: $theme-light,
+  dark: $theme-dark
 ) !default;
-
-
-
-

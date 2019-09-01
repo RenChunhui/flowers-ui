@@ -1,113 +1,51 @@
-@import 'functions';
+$grid-gutter: convert-rem(32px);
 
-/// 0.125rem (2px) spacing with default mini unit
+$breakpoints: (
+  sm: (
+    columns: 4,
+    margin: 0,
+    width: convert-rem(320px)
+  ),
+  md: (
+    columns: 8,
+    margin: convert-rem(16px),
+    width: convert-rem(672px)
+  ),
+  lg: (
+    columns: 16,
+    margin: convert-rem(16px),
+    width: convert-rem(1056px)
+  ),
+  xlg: (
+    columns: 16,
+    margin: convert-rem(16px),
+    width: convert-rem(1312px)
+  )
+) !default;
+
+/// 间距
 ///
-/// @type Number
+/// @type Map
 /// @access public
 /// @group layout
-$spacing-01: mini-units(0.25) !default;
+$spacers:(
+  1: convert-rem(2px),
+  2: convert-rem(4px),
+  3: convert-rem(8px),
+  4: convert-rem(12px),
+  5: convert-rem(16px),
+  6: convert-rem(24px),
+  7: convert-rem(32px),
+  8: convert-rem(40px),
+  9: convert-rem(48px)
+) !default;
 
-/// 0.25rem (4px) spacing with default mini unit
-///
-/// @type Number
-/// @access public
-/// @group layout
-$spacing-02: mini-units(0.5) !default;
-
-/// 0.5rem (8px) spacing with default mini unit
-///
-/// @type Number
-/// @access public
-/// @group layout
-$spacing-03: mini-units(1) !default;
-
-/// 0.75rem (12px) spacing with default mini unit
-///
-/// @type Number
-/// @access public
-/// @group layout
-$spacing-04: mini-units(1.5) !default;
-
-/// 1rem (16px) spacing with default mini unit
-///
-/// @type Number
-/// @access public
-/// @group layout
-$spacing-05: mini-units(2) !default;
-
-/// 1.5rem (24px) spacing with default mini unit
-///
-/// @type Number
-/// @access public
-/// @group layout
-$spacing-06: mini-units(3) !default;
-
-/// 2rem (32px) spacing with default mini unit
-///
-/// @type Number
-/// @access public
-/// @group layout
-$spacing-07: mini-units(4) !default;
-
-/// 2.5rem (40px) spacing with default mini unit
-///
-/// @type Number
-/// @access public
-/// @group layout
-$spacing-08: mini-units(5) !default;
-
-/// 3rem (48px) spacing with default mini unit
-///
-/// @type Number
-/// @access public
-/// @group layout
-$spacing-09: mini-units(6) !default;
-
-/// 1rem (16px) layout with default mini unit
-///
-/// @type Number
-/// @access public
-/// @group layout
-$layout-01: mini-units(2) !default;
-
-/// 1.5rem (24px) layout with default mini unit
-///
-/// @type Number
-/// @access public
-/// @group layout
-$layout-02: mini-units(3) !default;
-
-/// 2rem (32px) layout with default mini unit
-///
-/// @type Number
-/// @access public
-/// @group layout
-$layout-03: mini-units(4) !default;
-
-/// 3rem (48px) layout with default mini unit
-///
-/// @type Number
-/// @access public
-/// @group layout
-$layout-04: mini-units(6) !default;
-
-/// 4rem (64px) layout with default mini unit
-///
-/// @type Number
-/// @access public
-/// @group layout
-$layout-05: mini-units(8) !default;
-
-/// 4rem (96px) layout with default mini unit
-///
-/// @type Number
-/// @access public
-/// @group layout
-$layout-06: mini-units(12) !default;
-
-/// 10rem (160px) layout with default mini unit
-///
-/// @type Number
-/// @access public
-/// @group layout
-$layout-07: mini-units(20) !default;
+$layout-scale: (
+  1: convert-rem(16px),
+  2: convert-rem(24px),
+  3: convert-rem(32px),
+  4: convert-rem(48px),
+  5: convert-rem(64px),
+  6: convert-rem(96px),
+  7: convert-rem(160px)
+) !default;

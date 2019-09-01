@@ -1,0 +1,21 @@
+/// 跟踪已导入的模块
+///
+/// @type Map
+/// @access public
+/// @group base
+$base-styles-emitted:() !default;
+
+/// 确保每个模块只导入一次
+/// @access public
+/// @param {String} $key - 导入模块的名称
+/// @content
+/// @group base
+@mixin base-emit-once($key) {
+  @if (index($base-styles-emitted, $key) == null) {
+    $base-styles-emitted: append($base-styles-emitted, $key) !global;
+
+    @content;
+  } @else if $warn == true {
+    @warn '模块 `#{$key}` 已经导入.';
+  }
+}

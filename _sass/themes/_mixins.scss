@@ -1,5 +1,7 @@
-@import 'variables';
-
+/// 生成变量，前景、背景色
+///
+/// @access public
+/// @group themes
 @mixin theme-core-styles {
   :root {
     @each $style,$value in $theme-colors {
@@ -9,13 +11,15 @@
 
   @each $style,$value in $theme-colors {
     .bg-#{$style} {
-      background-color: --var($value);
+      background-color: var(--theme-#{$style});
     }
   }
 
   @each $style,$value in $theme-colors {
     .fg-#{$style} {
-      color: --var($value);
+      color: var(--theme-#{$style});
     }
   }
 }
+
+@include theme-core-styles();
