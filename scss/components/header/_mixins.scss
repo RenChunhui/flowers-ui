@@ -1,0 +1,43 @@
+@mixin header-core-styles {
+  .header {
+    @include header-base;
+    @include header-action;
+  }
+}
+
+// 基础样式
+@mixin header-base {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: to-rem(48px);
+  background-color: $shell-header-bg-01;
+  border-bottom: 1px solid $shell-header-border-01;
+}
+
+@mixin header-action {
+  & .header-action {
+    width: to-rem(48px);
+    height: to-rem(48px);
+    // border: ;
+  }
+}
+
+// 常用于显示 logo
+@mixin header-name {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  // padding: 0 mini-units(4) 0 mini-units(2);
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 0.1px;
+  line-height: 20px;
+  // user-select: none;
+  // border: ;
+  // transition:
+  outline: none;
+}

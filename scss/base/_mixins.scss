@@ -1,10 +1,3 @@
-/// 跟踪已导入的模块
-///
-/// @type Map
-/// @access public
-/// @group base
-$base-styles-emitted:() !default;
-
 /// 确保每个模块只导入一次
 /// @access public
 /// @param {String} $key - 导入模块的名称
@@ -19,3 +12,4 @@ $base-styles-emitted:() !default;
     @warn '模块 `#{$key}` 已经导入.';
   }
 }
+

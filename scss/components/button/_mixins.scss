@@ -1,0 +1,34 @@
+@mixin button-core-styles {
+  .btn {
+    @include button-base;
+    @include button-type;
+  }
+}
+
+// 按钮基本样式
+@mixin button-base {
+  cursor: pointer;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+// 按钮类型
+@mixin button-type {
+  @each $color,$value in $button-colors {
+    & .btn-#{$color} {
+      color: white;
+      background-color: var(--theme-#{$color});
+    }
+
+    & .btn-outline-#{$color} {
+      color: white;
+      background-color: var(--theme-#{$color});
+    }
+
+    & .btn-ghost-#{$color} {
+      color: white;
+      background-color: var(--theme-#{$color});
+    }
+  }
+}

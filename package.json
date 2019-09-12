@@ -1,8 +1,11 @@
 {
-  "name": "chameleon",
+  "name": "fiber",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "https://github.com/RenChunhui/chameleon.git",
-  "author": "Ren Chunhui <renchunhui2008@gmail.com>",
-  "license": "MIT"
+  "repository": "https://github.com/RenChunhui/fiber.git",
+  "author": "Ren Chunhui <346878847@qq.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "stylelint": "^10.1.0"
+  }
 }

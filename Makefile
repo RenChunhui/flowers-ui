@@ -1,2 +1,2 @@
 build:
-	@sass _sass/main.scss assets/css/main.css
+	@sass sass/fiber.scss out/main.css
