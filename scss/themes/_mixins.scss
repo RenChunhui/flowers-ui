@@ -1,7 +1,4 @@
-/// 生成变量，前景、背景色
-///
-/// @access public
-/// @group themes
+// 生成变量，前景、背景色
 @mixin theme-core-styles {
   :root {
     @each $style,$value in $theme-colors {

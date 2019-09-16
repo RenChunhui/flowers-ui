@@ -3,3 +3,11 @@ $button-colors:(
   secondary: $theme-secondary,
   danger: $theme-danger,
 ) !default;
+
+$btn-font-size: 14px !default;
+$btn-font-weight: 600 !default;
+
+$btn-height: to-rem(40px) !default;
+$btn-sm-height: to-rem(32px) !default;
+
+$btn-padding-horizonal: to-rem(16px) !default;

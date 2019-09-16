@@ -1,8 +1,4 @@
-/// 确保每个模块只导入一次
-/// @access public
-/// @param {String} $key - 导入模块的名称
-/// @content
-/// @group base
+// 确保每个模块只导入一次
 @mixin base-emit-once($key) {
   @if (index($base-styles-emitted, $key) == null) {
     $base-styles-emitted: append($base-styles-emitted, $key) !global;
@@ -13,3 +9,6 @@
   }
 }
 
+* {
+  box-sizing: border-box;
+}

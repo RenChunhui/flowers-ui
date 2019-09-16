@@ -1,7 +1,7 @@
 {
   "name": "@renchunhui/fiber",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "",
   "repository": "https://github.com/RenChunhui/fiber.git",
   "author": "Ren Chunhui <renchunhui2008@gmail.com>",
   "license": "MIT",
@@ -9,6 +9,7 @@
     "registry": "https://npm.pkg.github.com/@RenChunhui"
   },
   "devDependencies": {
-    "stylelint": "^10.1.0"
+    "stylelint": "^10.1.0",
+    "stylelint-config-standard": "^18.3.0"
   }
 }

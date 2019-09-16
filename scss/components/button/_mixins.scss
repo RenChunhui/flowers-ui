@@ -1,8 +1,9 @@
 @mixin button-core-styles {
   .btn {
     @include button-base;
-    @include button-type;
   }
+
+  @include button-type;
 }
 
 // 按钮基本样式
@@ -11,24 +12,41 @@
   display: inline-flex;
   justify-content: space-between;
   align-items: center;
+  margin: to-rem(8px);
+  font-size: $btn-font-size;
+  height: $btn-height;
+  line-height: 16px;
+  padding: $btn-padding-horizonal;
+
+  &:hover {
+    text-decoration: none;
+  }
+
+  &:focus,
+  &.focus {
+    outline: 0;
+  }
 }
 
 // 按钮类型
 @mixin button-type {
   @each $color,$value in $button-colors {
-    & .btn-#{$color} {
+    .btn-#{$color} {
       color: white;
+      border: 2px solid transparent;
       background-color: var(--theme-#{$color});
     }
 
-    & .btn-outline-#{$color} {
-      color: white;
-      background-color: var(--theme-#{$color});
+    .btn-outline-#{$color} {
+      color: var(--theme-#{$color});
+      border: 2px solid var(--theme-#{$color});
+      background: transparent;
     }
 
-    & .btn-ghost-#{$color} {
-      color: white;
-      background-color: var(--theme-#{$color});
+    .btn-ghost-#{$color} {
+      color: var(--theme-#{$color});
+      border: transparent;
+      background: transparent;
     }
   }
 }

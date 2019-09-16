@@ -3,23 +3,17 @@ $grid-gutter: convert-rem(32px);
 $breakpoints: (
   sm: (
     columns: 4,
-    margin: 0,
-    width: convert-rem(320px)
+    margin: convert-rem(16px),
+    width: convert-rem(600px)
   ),
   md: (
     columns: 8,
     margin: convert-rem(16px),
-    width: convert-rem(672px)
+    width: convert-rem(840px)
   ),
   lg: (
-    columns: 16,
-    margin: convert-rem(16px),
-    width: convert-rem(1056px)
-  ),
-  xlg: (
-    columns: 16,
-    margin: convert-rem(16px),
-    width: convert-rem(1312px)
+    columns: 12,
+    margin: convert-rem(24px)
   )
 ) !default;
 

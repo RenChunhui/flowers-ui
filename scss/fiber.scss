@@ -1,7 +1,18 @@
-@import './base';
-@import './themes';
-@import './typography';
-@import './layout';
+/**
+ * Fiber V1.0.0
+ *
+ * Copyright 2019 Chunhui Ren.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
 
-@import './components/button';
-@import './components/header';
+@charset 'utf-8';
+
+@import 'base';
+@import 'themes';
+@import 'typography';
+@import 'layout';
+
+@import 'components/button';
+@import 'components/header';

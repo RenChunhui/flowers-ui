@@ -1,52 +1,22 @@
-/// 主色
-///
-/// @type Color
-/// @access public
-/// @group themes
+// 主色
 $theme-primary: $color-blue-06 !default;
 
-/// 辅助
-///
-/// @type Color
-/// @access public
-/// @group themes
+// 辅助
 $theme-secondary: $color-gray-08 !default;
 
-/// 成功
-///
-/// @type Color
-/// @access public
-/// @group themes
+// 成功
 $theme-success: $color-green-05 !default;
 
-
-/// 错误
-///
-/// @type Color
-/// @access public
-/// @group themes
+// 错误
 $theme-danger: $color-red-06 !default;
 
-
-/// 警告
-///
-/// @type Color
-/// @access public
-/// @group themes
+// 警告
 $theme-warning: $color-yellow-02 !default;
 
-/// 浅色
-///
-/// @type Color
-/// @access public
-/// @group themes
+// 浅色
 $theme-light: $color-white !default;
 
-/// 暗色
-///
-/// @type Color
-/// @access public
-/// @group themes
+// 暗色
 $theme-dark: $color-black !default;
 
 $theme-colors:(
@@ -58,4 +28,3 @@ $theme-colors:(
   light: $theme-light,
   dark: $theme-dark
 ) !default;
-

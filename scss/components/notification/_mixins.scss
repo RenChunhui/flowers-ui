@@ -1,0 +1,7 @@
+/// 边框颜色
+///
+/// @access private
+/// @group Nofification
+@mixin notification-color($color) {
+  border-color: 6px solid $color;
+}
