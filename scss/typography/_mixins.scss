@@ -10,50 +10,50 @@
   }
 
   h1 {
-    font-size: to-rem(42px);
+    font-size: unit-rem(42px);
     font-weight: map-get($font-weight-values, 'light');
-    line-height: to-rem(50px);
+    line-height: unit-rem(50px);
     letter-spacing: 0;
   }
 
   h2 {
-    font-size: to-rem(32px);
+    font-size: unit-rem(32px);
     font-weight: map-get($font-weight-values, 'regular');
-    line-height: to-rem(40px);
+    line-height: unit-rem(40px);
     letter-spacing: 0;
   }
 
   h3 {
-    font-size: to-rem(28px);
+    font-size: unit-rem(28px);
     font-weight: map-get($font-weight-values, 'regular');
-    line-height: to-rem(36px);
+    line-height: unit-rem(36px);
     letter-spacing: 0;
   }
 
   h4 {
-    font-size: to-rem(20px);
+    font-size: unit-rem(20px);
     font-weight: map-get($font-weight-values, 'regular');
-    line-height: to-rem(26px);
+    line-height: unit-rem(26px);
     letter-spacing: 0;
   }
 
   h5 {
-    font-size: to-rem(16px);
+    font-size: unit-rem(16px);
     font-weight: map-get($font-weight-values, 'semibold');
-    line-height: to-rem(22px);
+    line-height: unit-rem(22px);
     letter-spacing: 0;
   }
 
   h6 {
-    font-size: to-rem(14px);
+    font-size: unit-rem(14px);
     font-weight: map-get($font-weight-values, 'semibold');
-    line-height: to-rem(18px);
+    line-height: unit-rem(18px);
     letter-spacing: .16px;
   }
 
   p {
     font-weight: map-get($font-weight-values, 'regular');
-    line-height: to-rem(24px);
+    line-height: unit-rem(24px);
     letter-spacing: 0;
   }
 

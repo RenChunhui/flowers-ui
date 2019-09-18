@@ -1,30 +1,39 @@
 // 主色
-$theme-primary: $color-blue-06 !default;
+$theme-primary: #3d70b2 !default;
 
 // 辅助
-$theme-secondary: $color-gray-08 !default;
+$theme-secondary: #5596e6 !default;
 
 // 成功
-$theme-success: $color-green-05 !default;
+$theme-success: #5aa700 !default;
 
 // 错误
-$theme-danger: $color-red-06 !default;
+$theme-danger: #e0182d !default;
 
 // 警告
-$theme-warning: $color-yellow-02 !default;
+$theme-warning: #efc100 !default;
+
+// 信息
+$theme-info: #5aaafa !default;
+
+// 背景色
+$theme-background: #f4f7fb !default;
+
+// 表面色
+$theme-surface: #fff !default;
 
 // 浅色
-$theme-light: $color-white !default;
+$theme-light: #fff !default;
 
 // 暗色
-$theme-dark: $color-black !default;
+$theme-dark: #000 !default;
 
 $theme-colors:(
-  primary: $theme-primary,
-  secondary: $theme-secondary,
-  success: $theme-success,
-  danger: $theme-danger,
-  warning: $theme-danger,
-  light: $theme-light,
-  dark: $theme-dark
+  'primary': $theme-primary,
+  'secondary': $theme-secondary,
+  'success': $theme-success,
+  'danger': $theme-danger,
+  'warning': $theme-danger,
+  'light': $theme-light,
+  'dark': $theme-dark
 ) !default;

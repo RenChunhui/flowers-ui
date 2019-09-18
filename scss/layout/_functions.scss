@@ -1,4 +1,0 @@
-// 单位转换: px -> rem
-@function convert-rem($value) {
-  @return ($value / $font-size-base) * 1rem;
-}

@@ -1,14 +1,16 @@
-// 确保每个模块只导入一次
-@mixin base-emit-once($key) {
-  @if (index($base-styles-emitted, $key) == null) {
-    $base-styles-emitted: append($base-styles-emitted, $key) !global;
+@import 'variables';
 
-    @content;
-  } @else if $warn == true {
-    @warn '模块 `#{$key}` 已经导入.';
+// 基础样式设置
+@mixin base-styles {
+  * {
+    box-sizing: border-box;
   }
-}
 
-* {
-  box-sizing: border-box;
+  :root {
+    font-size: $base-font-size;
+  }
+
+  body {
+    margin: 0;
+  }
 }

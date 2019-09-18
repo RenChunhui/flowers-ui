@@ -1,28 +1,58 @@
 {
-   "extends": "stylelint-config-standard",
-   "rules": {
-      "indentation": "tab",
-      "color-no-invalid-hex": true,
-      "font-family-no-duplicate-names": true,
-      "function-calc-no-invalid": true,
-      "function-calc-no-unspaced-operator": true,
-      "function-linear-gradient-no-nonstandard-direction": true,
-      "string-no-newline": true,
-      "unit-no-unknown": true,
-      "property-no-unknown": true,
-      "keyframe-declaration-no-important": true,
-      "declaration-block-no-duplicate-properties": true,
-      "block-no-empty": true,
-      "selector-pseudo-class-no-unknown": true,
-      "selector-pseudo-element-no-unknown": true,
-      "selector-type-no-unknown": true,
-      "media-feature-name-no-unknown": true,
-      "at-rule-no-unknown": true,
-      "comment-no-empty": true,
-      "no-descending-specificity": true,
-      "no-duplicate-at-import-rules": true,
-      "no-duplicate-selectors": true,
-      "no-empty-source": true,
-      "no-extra-semicolons": true
-   }
+  "extends": "stylelint-config-standard",
+  "rules": {
+    "indentation": [
+      2,
+      {
+        "message": "缩进为 2 个空格"
+      }
+    ],
+    "color-no-invalid-hex": [
+      true,
+      {
+        "message": "禁止使用无效的十六进制颜色"
+      }
+    ],
+    "font-family-no-duplicate-names": [
+      true,
+      {
+        "message": "禁止使用重复的字体名称"
+      }
+    ],
+    "function-calc-no-invalid": true,
+    "function-calc-no-unspaced-operator": true,
+    "function-linear-gradient-no-nonstandard-direction": true,
+    "string-no-newline": true,
+    "unit-no-unknown": true,
+    "property-no-unknown": true,
+    "keyframe-declaration-no-important": true,
+    "declaration-block-no-duplicate-properties": true,
+    "block-no-empty": true,
+    "selector-pseudo-class-no-unknown": true,
+    "selector-pseudo-element-no-unknown": true,
+    "selector-type-no-unknown": true,
+    "media-feature-name-no-unknown": true,
+    "at-rule-no-unknown": [
+      true,
+      {
+        "ignoreAtRules": ["mixin","function","include","return","if","else","warn","each"]
+      }
+    ],
+    "comment-no-empty": true,
+    "no-descending-specificity": true,
+    "no-duplicate-at-import-rules": true,
+    "no-duplicate-selectors": true,
+    "no-empty-source": [
+      true,
+      {
+        "message": "禁止空源"
+      }
+    ],
+    "no-extra-semicolons": [
+      true,
+      {
+        "message": "禁止多余的分号"
+      }
+    ]
+  }
 }

@@ -1,0 +1,24 @@
+@import 'mixins';
+
+// Spacing
+$spacing: (
+  2: unit-rem(2px),
+  4: unit-rem(4px),
+  8: unit-rem(8px),
+  12: unit-rem(12px),
+  16: unit-rem(16px),
+  24: unit-rem(24px),
+  32: unit-rem(32px),
+  40: unit-rem(40px),
+  48: unit-rem(48px)
+) !default;
+
+$layout: (
+  16: unit-rem(16px),
+  24: unit-rem(24px),
+  32: unit-rem(32px),
+  48: unit-rem(48px),
+  64: unit-rem(64px),
+  96: unit-rem(96px),
+  160: unit-rem(160px)
+) !default;
