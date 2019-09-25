@@ -1,0 +1,47 @@
+@import './constants';
+
+/// 计算颜色亮度
+///
+/// @see https://www.w3.org/TR/WCAG20-TECHS/G17.html#G17-tests
+@function fiber--theme-luminance($color) {
+  $red: nth($fiber--theme-linear-channel-values, red($color) + 1);
+  $green: nth($fiber--theme-linear-channel-values, green($color) + 1);
+  $blue: nth($fiber--theme-linear-channel-values, blue($color) + 1);
+
+  @return .2126 * $red + .7152 * $green + .0722 * $blue;
+}
+
+/// 计算两种颜色之间的对比度
+///
+/// @see https://www.w3.org/TR/WCAG20-TECHS/G17.html#G17-tests
+@function fiber--theme-contrast($back,$front) {
+  $backLum: fiber--theme-luminance($back) + .05;
+  $foreLum: fiber--theme-luminance($front) + .05;
+
+  @return max($backLum, $foreLum) / min($backLum, $foreLum);
+}
+
+/// 判断使用浅色还是暗色
+///
+/// @see https://www.w3.org/TR/WCAG20-TECHS/G17.html#G17-tests
+@function fiber--theme-tone($color) {
+  @if $color == "dark" or $color == "light" {
+    @return $color;
+  }
+
+  $minimumContrast: 3.1;
+
+  $lightContrast: fiber--theme-contrast($color, white);
+  $darkContrast: fiber--theme-contrast($color, rgba(black, .87));
+
+  @if ($lightContrast < $minimumContrast) and ($darkContrast > $lightContrast) {
+    @return "light";
+  } @else {
+    @return "dark";
+  }
+}
+
+/// 判断前景所使用颜色
+@function fiber--theme-contrast-tone($color) {
+  @return if(fiber--theme-tone($color) == "dark", "light", "dark");
+}

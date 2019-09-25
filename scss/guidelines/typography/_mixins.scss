@@ -1,0 +1,37 @@
+@import './variables';
+
+@mixin fiber--typography {
+  h1 {
+    @include fiber--fetch-typography($fiber--typography-headline1);
+  }
+
+  h2 {
+    @include fiber--fetch-typography($fiber--typography-headline2);
+  }
+
+  h3 {
+    @include fiber--fetch-typography($fiber--typography-headline3);
+  }
+
+  h4 {
+    @include fiber--fetch-typography($fiber--typography-headline4);
+  }
+
+  h5 {
+    @include fiber--fetch-typography($fiber--typography-headline5);
+  }
+
+  h6 {
+    @include fiber--fetch-typography($fiber--typography-headline6);
+  }
+
+  em {
+    font-style: italic;
+  }
+}
+
+@mixin fiber--fetch-typography($typography) {
+  @each $key,$value in $typography {
+    #{$key}: $value;
+  }
+}

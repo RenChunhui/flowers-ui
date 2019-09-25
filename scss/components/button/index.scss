@@ -1,4 +1,3 @@
-@import './variables';
 @import './mixins';
 
-@include button-core-styles;
+@include fiber--button;

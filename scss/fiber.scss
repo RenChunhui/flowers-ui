@@ -9,9 +9,13 @@
 
 @charset 'utf-8';
 
-@import 'base';
-@import 'themes';
-@import 'typography';
-@import 'spacing';
-// @import 'components/button';
-// @import 'components/header';
+@import './guidelines/base';
+@import './guidelines/theme';
+@import './guidelines/grid';
+@import './guidelines/typography';
+
+@import './components/accordion';
+@import './components/breadcrumb';
+@import './components/button';
+@import './components/checkbox';
+@import './components/radio';

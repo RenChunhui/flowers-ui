@@ -19,9 +19,11 @@
         "message": "禁止使用重复的字体名称"
       }
     ],
+
     "function-calc-no-invalid": true,
     "function-calc-no-unspaced-operator": true,
     "function-linear-gradient-no-nonstandard-direction": true,
+
     "string-no-newline": true,
     "unit-no-unknown": true,
     "property-no-unknown": true,
@@ -32,13 +34,27 @@
     "selector-pseudo-element-no-unknown": true,
     "selector-type-no-unknown": true,
     "media-feature-name-no-unknown": true,
+
     "at-rule-no-unknown": [
       true,
       {
         "ignoreAtRules": ["mixin","function","include","return","if","else","warn","each"]
       }
     ],
+    "at-rule-empty-line-before": [
+      "always",
+      {
+        "message": "在 @ 规则之前必须有一行空行",
+        "ignore": ["after-comment"],
+        "except": [
+          "blockless-after-same-name-blockless",
+          "first-nested"
+        ]
+      }
+    ],
+
     "comment-no-empty": true,
+
     "no-descending-specificity": true,
     "no-duplicate-at-import-rules": true,
     "no-duplicate-selectors": true,
@@ -52,6 +68,19 @@
       true,
       {
         "message": "禁止多余的分号"
+      }
+    ],
+
+    "number-leading-zero": [
+      "never",
+      {
+        "message": "禁止有前导 0"
+      }
+    ],
+    "number-no-trailing-zeros": [
+      true,
+      {
+        "message": "禁止数字中末尾为0"
       }
     ]
   }

@@ -1,6 +1,0 @@
-@import 'variables';
-
-// 单位转换至 rem
-@function unit-rem($value) {
-  @return ($value / $base-font-size) * 1rem;
-}
