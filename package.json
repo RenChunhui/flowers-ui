@@ -9,7 +9,11 @@
     "registry": "https://npm.pkg.github.com/@RenChunhui"
   },
   "devDependencies": {
-    "stylelint": "^10.1.0",
-    "stylelint-config-standard": "^18.3.0"
+    "stylelint": "^11.0.0",
+    "stylelint-config-standard": "^19.0.0",
+    "stylelint-csstree-validator": "^1.5.2",
+    "stylelint-order": "^3.1.1",
+    "stylelint-scss": "^3.11.1",
+    "stylelint-selector-bem-pattern": "^2.1.0"
   }
 }

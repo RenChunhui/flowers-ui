@@ -1,72 +1,93 @@
 @import './variables';
 
-/// Button styles
-///
-/// @access private
-/// @group button
+// Button styles
 @mixin fiber--button {
-  .btn {
-    @include fiber--button-base();
-  }
+  @include fiber--button-base();
 
   @include fiber--button-theme();
   @include fiber--button-outline-theme();
   @include fiber--button-ghost-theme();
+
+  @include fiber--button-size();
 }
 
-/// Button base styles
-///
-/// @access private
-/// @group button
-@mixin fiber--button-base {
-  cursor: pointer;
-  display: inline-flex;
-  position: relative;
-  align-items: center;
-  justify-content: center;
-  // min-width: $fiber--button-width;
-  height: $fiber--button-height;
-  border: none;
-  outline: none;
-  line-height: inherit;
-  user-select: none;
-  -webkit-appearance: none;
-  overflow: hidden;
-  vertical-align: middle;
 
-  &:disabled,
-  &.#{$prefix}btn-disabled {
-    cursor: not-allowed;
+// Button
+// --------------------------------------------------
+@mixin fiber--button-base {
+  .btn {
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+
+    &:hover {
+      color: #fff;
+    }
+
+    &:focus {
+      color: #fff;
+    }
+
+    &.active,
+    &:active {
+      color: #fff;
+    }
+
+    &.disabled,
+    &:disabled {
+      color: #fff;
+    }
   }
 }
 
-/// Button variant styles
-///
-/// @access private
-/// @group button
+
+// Button default
+// --------------------------------------------------
 @mixin fiber--button-theme {
   @each $key,$value in $fiber--button-themes {
-    .#{$prefix}btn-#{$key} {
-      background-color: #{$value};
+    .btn-#{$key} {
+      color: #fff;
     }
   }
 }
 
+
+// Button outline
+// --------------------------------------------------
 @mixin fiber--button-outline-theme {
   @each $key,$value in $fiber--button-themes {
-    .#{$prefix}btn-outline-#{$key} {
-      background: transparent;
-      border: 1px solid #{$value};
+    .btn-outline-#{$key} {
+      background-color: #fff;
     }
   }
 }
 
+
+// Button ghost
+// --------------------------------------------------
 @mixin fiber--button-ghost-theme {
   @each $key,$value in $fiber--button-themes {
-    .#{$prefix}btn-outline-#{$key} {
-      color: #{$value};
-      background: transparent;
-      border: none;
+    .btn-ghost-#{$key} {
+      background-color: #fff;
     }
+  }
+}
+
+// Button size
+// --------------------------------------------------
+@mixin fiber--button-size {
+  .btn-lg {
+    background-color: #fff;
+  }
+
+  .btn-sm {
+    background-color: #fff;
+  }
+
+  .btn-block {
+    display: block;
+    width: 100%;
   }
 }

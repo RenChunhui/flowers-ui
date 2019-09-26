@@ -1,11 +1,41 @@
-$fiber--button-height: 48px !default;
-$fiber--button-padding: calc(.875rem - 3px) 60px calc(.875rem - 3px) 12px !default;
-$fiber--button-padding-sm: calc(.375rem - 3px) 60px calc(.375rem - 3px) 12px !default;
-$fiber--button-ghost-padding: calc(.875rem - 3px) 12px !default;
-$fiber--button-ghost-padding-sm: calc(.375rem - 3px) 1rem !default;
+// Button
+// --------------------------------------------------
 
-$fiber--button-themes: (
+/// @prop 按钮文字
+$button-font-size: $fiber--typography-body2 !default;
+
+/// @prop 按钮高度
+$button-height: 40px !default;
+
+/// @prop 小按钮高度
+$button-height-sm: 32px !default;
+
+/// @prop 横向内边距
+$button-padding: 16px !default;
+
+/// @prop 小按钮横向边距
+$button-padding-sm: 10px !default;
+
+/// @prop 按钮类型
+$button-themes: (
   primary: $fiber--theme-primary,
   secondary: $fiber--theme-secondary,
   error: $fiber--theme-error
 ) !default;
+
+
+// Outline Button
+// --------------------------------------------------
+
+/// @prop 边框粗细
+$button-outline-border-width: 1px !default;
+
+
+// Ghost Button
+// --------------------------------------------------
+
+/// @prop 内边距
+$button-ghost-padding: 8px !default;
+
+/// @prop 小按钮内边距
+$button-ghost-padding-sm: 10px !default;
