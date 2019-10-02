@@ -1,8 +1,11 @@
 // Button
 // --------------------------------------------------
 
-/// @prop 按钮文字
+/// @prop 字体设置
 $button-font-size: $fiber--typography-body2 !default;
+
+/// @prop 最小宽度
+$button-min-width: 64px !default;
 
 /// @prop 按钮高度
 $button-height: 40px !default;
@@ -22,6 +25,15 @@ $button-themes: (
   secondary: $fiber--theme-secondary,
   error: $fiber--theme-error
 ) !default;
+
+/// @prop 图标大小
+$button-icon-size: 16px !default;
+
+/// @prop 圆角
+$button-border-radius: 0 !default;
+
+/// @prop 阴影
+$button-box-shadow: 0 !default;
 
 
 // Outline Button
