@@ -1,0 +1,14 @@
+{
+  "name": "flowers-ui",
+  "version": "1.0.0",
+  "repository": "https://github.com/RenChunhui/flowers-ui.git",
+  "author": "Chunhui Ren <renchunhui2008@gmail.com>",
+  "scripts": {
+    "build": "sass scss/flowers.scss dist/flowers.css --no-source-map --style=compressed"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "sassdoc": "^2.7.2",
+    "stylelint": "^13.6.1"
+  }
+}
