@@ -1,0 +1,66 @@
+@use './variables';
+
+@mixin init-styles {
+  @include spacing-margin();
+  @include spacing-padding();
+}
+
+@mixin spacing-margin {
+  @each $key,$value in variables.$spacers {
+    .mt-#{$key} {
+      margin-top: #{variables.$spacer * $value};
+    }
+
+    .mr-#{$key} {
+      margin-right: #{variables.$spacer * $value};
+    }
+
+    .mb-#{$key} {
+      margin-bottom: #{variables.$spacer * $value};
+    }
+
+    .ml-#{$key} {
+      margin-left: #{variables.$spacer * $value};
+    }
+
+    .mx-#{$key} {
+      margin-left: #{variables.$spacer * $value};
+      margin-right: #{variables.$spacer * $value};
+    }
+
+    .my-#{$key} {
+      margin-top: #{variables.$spacer * $value};
+      margin-bottom: #{variables.$spacer * $value};
+    }
+  }
+}
+
+@mixin spacing-padding {
+  @each $key,$value in variables.$spacers {
+    .pt-#{$key} {
+      padding-top: #{variables.$spacer * $value};
+    }
+
+    .pr-#{$key} {
+      padding-right: #{variables.$spacer * $value};
+    }
+
+    .pb-#{$key} {
+      padding-bottom: #{variables.$spacer * $value};
+    }
+
+    .pl-#{$key} {
+      padding-left: #{variables.$spacer * $value};
+    }
+
+    .px-#{$key} {
+      padding-left: #{variables.$spacer * $value};
+      padding-right: #{variables.$spacer * $value};
+    }
+
+    .py-#{$key} {
+      padding-top: #{variables.$spacer * $value};
+      padding-bottom: #{variables.$spacer * $value};
+    }
+  }
+}

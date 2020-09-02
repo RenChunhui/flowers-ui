@@ -9,6 +9,11 @@ $danger:    palette.$red-60 !default;
 $light:     #ecf0f1 !default;
 $dark:      #34495e !default;
 
+////
+/// 主题颜色
+///
+/// @group Themes
+////
 $theme-colors: (
   "primary":   $primary,
   "secondary": $secondary,

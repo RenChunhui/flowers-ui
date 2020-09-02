@@ -2,13 +2,13 @@
 $spacer: 1rem !default;
 $spacers: (
   0: 0,
-  1: $spacer * .125,
-  2: $spacer * .25,
-  3: $spacer * .5,
-  4: $spacer * .75,
-  5: $spacer,
-  6: $spacer * 1.5,
-  7: $spacer * 2,
-  8: $spacer * 2.5,
-  9: $spacer * 3
+  1: .125,
+  2: .25,
+  3: .5,
+  4: .75,
+  5: 1,
+  6: 1.5,
+  7: 2,
+  8: 2.5,
+  9: 3
 ) !default;
