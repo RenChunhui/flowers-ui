@@ -4,7 +4,8 @@
   "repository": "https://github.com/RenChunhui/flowers-ui.git",
   "author": "Chunhui Ren <renchunhui2008@gmail.com>",
   "scripts": {
-    "build": "sass scss/flowers.scss dist/flowers.css --no-source-map --style=compressed"
+    "start": "sass scss/flowers.scss dist/flowers.css --watch",
+    "build": "sass scss/flowers.scss dist/flowers.css --no-source-map --style=expanded"
   },
   "license": "MIT",
   "devDependencies": {
