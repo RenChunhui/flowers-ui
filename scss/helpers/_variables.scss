@@ -1,0 +1,81 @@
+/// 前缀
+$prefix: 'fl-' !default;
+
+$theme-primary: #111 !default;
+$theme-secondary: #222 !default;
+$theme-success: #333 !default;
+$theme-danger: #444 !default;
+$theme-warning: #555 !default;
+$theme-info: #666 !default;
+$theme-light: #000 !default;
+$theme-dark: #000 !default;
+
+// 主题
+$theme-colors:(
+  primary: $theme-primary,
+  sccondary: $theme-secondary,
+  success: $theme-success,
+  danger: $theme-danger,
+  warning: $theme-warning,
+  info: $theme-info,
+  light: $theme-light,
+  dark: $theme-dark
+) !default;
+
+/// 断点
+$grid-breakpoints:(
+  sm: 640px,
+  md: 768px,
+  lg: 1024px,
+  xl: 1280px
+) !default;
+
+/// 容器宽度
+$container-width:(
+  sm: 540px,
+  md: 720px,
+  lg: 60px,
+  xl: 1140px,
+) !default;
+
+// 间距
+$spacing:(
+  1: '8px',
+  2: '12px',
+  3: '16px',
+  4: '24px',
+  5: '32px',
+  6: '48px'
+) !default;
+
+
+
+
+// Font Size
+//
+//
+
+$font-size-default: 1rem !default;
+
+$font-size-h1: $font-size-default * 2.5 !default;
+$font-size-h2: $font-size-default * 2 !default;
+$font-size-h3: $font-size-default * 1.75 !default;
+$font-size-h4: $font-size-default * 1.5 !default;
+$font-size-h5: $font-size-default * 1.25 !default;
+$font-size-h6: $font-size-default !default;
+
+
+/// Font Weight
+///
+/// @see https://developer.mozilla.org/zh-CN/docs/Web/CSS/font-weight
+$font-weight-keys:(
+  thin: 100,
+  extralight: 200,
+  light: 300,
+  normal: 400,
+  medium: 500,
+  semibold: 600,
+  bold: 700,
+  extrabold: 800,
+  black: 900
+) !default;

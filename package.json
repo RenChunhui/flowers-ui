@@ -9,7 +9,7 @@
   },
   "license": "MIT",
   "devDependencies": {
-    "sassdoc": "^2.7.2",
+    "sassdoc": "^2.7.3",
     "stylelint": "^13.6.1"
   }
 }

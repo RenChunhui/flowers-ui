@@ -1,0 +1,17 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+// Root
+
+:root {
+  font-size: 1rem;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
